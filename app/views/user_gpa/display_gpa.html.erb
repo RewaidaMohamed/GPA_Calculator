@@ -1,0 +1,23 @@
+
+<html>
+	<head>
+		<%= stylesheet_link_tag('application' ,:media => 'all') %>
+
+	</head>
+	<body id="body3">
+		<div id = "logo_name">
+			<h1>GPA Calculator</h1>
+			<div id = "logo_pic">
+				<%= image_tag('app_icon.png', :width => 55 , :height => 55 )  %>
+			</div>
+		</div>
+		<div id="gpa_body">
+
+			<h2 id="gpd_display">your gpa is <%=@semester.gpa_result.inspect %> </h2>
+		
+
+			<%= link_to("<< Back" , :action => "gpa_calc" , :user_id => @semester.user_id) %>
+		</div>
+
+	</body>
+</html>

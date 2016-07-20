@@ -1,0 +1,61 @@
+
+
+<html>
+<head>
+	<title>Dashboard</title>
+	<%= stylesheet_link_tag('application' ,:media => 'all') %>
+</head>
+<body id="dash_body">
+	<div id = "logo_name">
+		<h1>GPA Calculator</h1>
+		<div id = "logo_pic">
+			<%= image_tag('app_icon.png', :width => 55 , :height => 55 )  %>
+		</div>
+	</div>
+	<h3>Dashboard</h3>
+	<%= link_to("<< Back" , :controller => "demo" , :action => "homepage" , :id => @user.id) %>
+	<div id ="dashboard" , style="overflow-x:auto;">
+		<% @semesters.each do |semester| %>
+			<table id="dash_table">
+				<tr>
+					<td>Course</td>
+					<td>Credit</td>
+					<td>Grade</td>
+				</tr>
+				<tr>
+					<td><%= semester.course1.inspect %></td>
+					<td><%= semester.credit1.inspect %></td>	
+			   		<td><%= semester.grade1.inspect %></td>
+			  	</tr>
+			  	<tr>
+					<td><%= semester.course2.inspect %></td>
+					<td><%= semester.credit2.inspect %></td>	
+			   		<td><%= semester.grade2.inspect %></td>
+			  	</tr>
+			  	<tr>
+					<td><%= semester.course3.inspect %></td>
+					<td><%= semester.credit3.inspect %></td>	
+			   		<td><%= semester.grade3.inspect %></td>
+			  	</tr>
+			  	<tr>
+					<td><%= semester.course4.inspect %></td>
+					<td><%= semester.credit4.inspect %></td>	
+			   		<td><%= semester.grade4.inspect %></td>
+			  	</tr>
+			  	<tr>
+					<td><%= semester.course5.inspect %></td>
+					<td><%= semester.credit5.inspect %></td>	
+			   		<td><%= semester.grade5.inspect %></td>
+			  	</tr>
+			  	<tr>
+			  		<td></td>
+			  		<td>GPA = </td>
+			  		<td><%= semester.gpa_result.inspect %></td>
+			  	</tr>
+			 </table>
+		<% end %>
+	</div>
+
+	
+</body>
+</html>

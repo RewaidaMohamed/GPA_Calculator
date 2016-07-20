@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Sign Up</title>
+		<%= stylesheet_link_tag('application' ,:media => 'all') %>
+	</head>
+	<body id="body_sign">
+		<div id = "logo_name">
+			<h1>GPA Calculator</h1>
+			<div id = "logo_pic">
+				<%= image_tag('app_icon.png', :width => 55 , :height => 55 )  %>
+			</div>
+		</div>
+		<div id="sign_pic">
+			<%= image_tag('signup.png')%>
+		</div>
+		<div id="signup_form">
+			<%= form_for(:user , :url => {:action => 'create'}) do |f| %>
+				<table>
+					<tr>
+						<td><%= f.label(:user_name , "User Name: ")%></td>
+						<td><%= f.text_field(:user_name) %></td>
+					</tr>
+					<tr>
+						<td><%= f.label(:mail, "Email: ") %></td>
+						<td><%= f.email_field(:mail)%></td>
+					</tr>
+					<tr>
+						<td><%= f.label(:password, "Password: ") %></td>
+						<td><%= f.password_field(:password)%></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><%= submit_tag("Sign Up")%></td>
+					</tr>
+				</table>
+			<%end%>
+		</div>
+	</body>
+</html>

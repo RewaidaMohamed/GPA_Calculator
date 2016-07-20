@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPA</title>
+	<%= stylesheet_link_tag('application' ,:media => 'all') %>
+</head>
+<body>
+	<div id = "logo_name">
+		<h1>GPA Calculator</h1>
+		<div id = "logo_pic">
+			<%= image_tag('app_icon.png', :width => 55 , :height => 55 )  %>
+		</div>
+	</div>
+	<div id="book_background">
+		<%= image_tag('books.png' , :width => 300 , :height => 300)%>
+	</div>
+	<div id="login_form">
+		<%= form_tag(:action => 'attempt_login' ) do %>
+			
+			<table id="login_table">
+					<tr>
+						<td><%= label_tag(:mail) %></td>
+						<td id="input"><%= email_field_tag(:mail)%></td>
+					</tr>
+					<tr>
+						<td><%= label_tag(:password) %></td>
+						<td id="input"><%= password_field_tag(:password)%></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><%= submit_tag("Log in")%></td>
+					</tr>
+			</table>
+		<% end %>
+		<%= link_to("new user , Sign UP" , :action => 'signup')%>
+	</div>
+
+	
+
+</body>
+</html>

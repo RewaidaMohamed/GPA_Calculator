@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+#logo_name{
+	padding-top: 15px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	height : 60px;
+	outline-style: dashed;
+	background-color: white;
+
+}
+#logo_pic{
+	float:right;
+	margin : auto;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+}
+#book_background{
+	position: relative;
+	float:left;
+	padding-top: 100px;
+	padding-left: 200px;
+	
+}
+h1{
+	color : dark_blue;
+	font-family: "Lucida Console";
+
+}
+#login_form{
+	background-color : #97DEFF;
+	height : 500px;
+	padding-left: 800px;
+	padding-top: 200px;
+}
+
+#login_table{
+	text-align: left;
+	height: 150px;
+	width:300px;
+}
+
+#input{
+	width:200px;
+	color: red;
+}
+#body_sign{
+	background-color: rgb(151, 222, 255);
+}
+#signup_form{
+	
+	position: relative;
+	float:right;
+	margin-right: 300px;
+	margin-top: 150px;
+
+}
+#sign_pic{
+	float:left;
+}
+
+#gpa_calc{
+	margin-left:490px;
+	margin-top: 200px; 
+	padding-bottom: 100px;
+}
+
+#calc{
+	background-image: url("calc_back.gif");
+}
+#winky{
+	float:right;
+}
+#body3{
+	background-color: #BAE3EB;
+}
+#gpa_body{
+	background-color: #BAE3EB;
+	background-image: url("gpa_back.png");
+	height: 600px;
+	width:1000px;
+}
+h2{
+	text-align: center;
+	text-decoration: underline;
+	color : dark_blue;
+	padding-top:10px;
+	font-family: "Verdana";
+	font-style: oblique;
+	font-size: 24px;
+}
+#homepage{
+	background-color: #97DEFF;
+	height: 590px;
+}
+
+#dash_body{
+	background-image: url("dash.jpg");
+	background-color : #54BDDA;
+}
+h3{
+	font-size: 40px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#dash_table{
+	padding: 30px;
+	text-align: center;
+
+}
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<%= stylesheet_link_tag('application' ,:media => 'all') %>
+</head>
+<body>
+	<div id = "logo_name">
+		<h1>GPA Calculator</h1>
+		<div id = "logo_pic">
+			<%= image_tag('app_icon.png', :width => 55 , :height => 55 )  %>
+		</div>
+	</div>
+	<div id="homepage">
+		<div id="welcome_pic">
+			<%= image_tag('welcome_homepage.png' , :width => 1000 , :height => 300)%>
+		</div>
+		<p>Welcome , <%= @user.user_name %> </p>
+		<%= link_to("dashboard" , :controller => 'user_gpa' , :action => 'dashboard' , :user_id => @user.id) %><br/>
+		<%= link_to("GPA calculator" , :controller => 'user_gpa' , :action => 'gpa_calc' ,:user_id => @user.id) %><br/>
+		<%= link_to("logout" , :action => 'logout')%>
+	</div>
+</body>
+</html>
+	
+
+	
